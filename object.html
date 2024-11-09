@@ -1,0 +1,23 @@
+<script>
+    var product={
+        name:"puma", 
+        price:1000 ,
+        size:["xl","xxl"],
+        path:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgUHcySyJWoLke-8FlLWrYS_vHiw4gjTPiJA&s",
+
+    };
+    document.write(`<div class="d1">
+    <img src="${product.path}" alt="">
+    <h2>${product.price}</h2>
+    <p>${product.name}</p>
+</div>`);
+console.log(product);
+
+</script>
+<style>
+    .d1{
+        border: 2px solid black;
+        margin: auto;
+        width: 50%;
+    }
+</style>

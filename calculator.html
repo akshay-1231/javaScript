@@ -1,0 +1,66 @@
+<input type="text" id="num1">
+<input type="text" id="num2">
+<button class="btn" id="btn+">+</button>
+<button class="btn" id="btn-">-</button>
+<button class="btn" id="btn*">*</button>
+<button class="btn" id="btn/">/</button>
+<p id="result"></p>
+
+<script>
+//addition
+    document.getElementById('btn+').onclick =function(){
+
+    var d1=parseInt(document.getElementById('num1').value);
+    var d2=parseInt(document.getElementById('num2').value);
+    var result=d1+d2;
+
+    document.getElementById('result').innerHTML="Addition is :"+result;
+    };
+
+
+   //Division
+    document.getElementById('btn/').onclick =function(){
+
+var d1=parseInt(document.getElementById('num1').value);
+var d2=parseInt(document.getElementById('num2').value);
+var result=d1/d2;
+
+document.getElementById('result').innerHTML="Result"+result;
+};
+
+//Substraction
+document.getElementById('btn-').onclick =function(){
+
+var d1=parseInt(document.getElementById('num1').value);
+var d2=parseInt(document.getElementById('num2').value);
+var result=d1-d2;
+
+document.getElementById('result').innerHTML="Result"+result;
+};
+
+//Multiplication
+document.getElementById('btn*').onclick =function(){
+
+var d1=parseInt(document.getElementById('num1').value);
+var d2=parseInt(document.getElementById('num2').value);
+var result=d1*d2;
+
+document.getElementById('result').innerHTML="Result"+result;
+};
+</script>
+
+<style>
+
+.btn
+{
+
+    border: solid greenyellow;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+p{
+
+   color: Red;
+   background-color: rgb(205, 215, 16);
+}
+</style>

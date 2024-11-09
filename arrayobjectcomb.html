@@ -1,0 +1,41 @@
+<script>
+    var product=[
+        { name:"puma", 
+        price:1200 ,
+        size:["xl","xxl"],
+        path:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgUHcySyJWoLke-8FlLWrYS_vHiw4gjTPiJA&s",},
+        { name:"puma", 
+        price:1100 ,
+        size:["xl","xxl"],
+        path:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgUHcySyJWoLke-8FlLWrYS_vHiw4gjTPiJA&s",},
+        { name:"puma", 
+        price:1060 ,
+        size:["xl","xxl"],
+        path:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgUHcySyJWoLke-8FlLWrYS_vHiw4gjTPiJA&s",}
+    ];
+    console.log(product);
+     for(let ans of product){
+        document.write(`<div>
+    <img src="${ans.path}" alt="">
+    <h2>${ans.price}</h2>
+    <p>${ans.name}</p>
+</div>`);
+             console.log(ans);
+
+
+     }
+</script>
+<style>
+    div{
+        float: left;
+        padding-left: 10px;
+        text-align: center;
+        background-color: blue;
+        
+    }
+    img{
+        width: 300px;
+        border: solid 3px;
+      
+    }
+</style>
